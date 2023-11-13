@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Custom from './Custom_hooks/App';
+import UseMemo from './useMemo/App';
 
 
 
@@ -11,7 +12,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Custom></Custom>
+    {/* <Custom></Custom> */}
+    <UseMemo></UseMemo>
   </React.StrictMode>
 );
 
