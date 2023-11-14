@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 
 const App = () => {
-    const randomColor=()=> 'rgb(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
+  const randomColor=()=> 'rgb(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
 
     const [username,setUsername]=useState("");
     const [profession,setPrefession]=useState("");

@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Custom from './Custom_hooks/App';
 import UseMemo from './useMemo/App';
-
+import UseCallback from "./useCallback/App";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +13,8 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Custom></Custom> */}
-    <UseMemo></UseMemo>
+    {/* <UseMemo></UseMemo> */}
+    <UseCallback></UseCallback>
   </React.StrictMode>
 );
 
