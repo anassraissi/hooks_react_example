@@ -2,15 +2,15 @@ import React from 'react'
 const randomColor=()=> 'rgb(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
 
 
-const Button = (props) => {
+function Button(props){
   return (
     <div>
-        <button style={{backgroundColor:randomColor()}}>
+        <button onClick={props.Onclick} style={{backgroundColor:randomColor()}}>
                 {props.children}    
-        </button>    
+        </button>  
 
     </div>
   )
 }
 
-export default Button
+export default React.memo(Button);
