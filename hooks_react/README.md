@@ -11,3 +11,30 @@ Hooks are features that allow you to “hook into” the features of React state
 ```
 we use useMemo for cash or make varialbles when changes cause event changes, or store variable that we need after serving a lot of request or function. 
 ```
+
+# useReducer 
+```
+is a React Hook that is used for state management in React applications. It is an alternative to the more commonly used useState Hook and is particularly useful when dealing with complex state logic that involves multiple sub-values or when the next state depends on the previous one.
+```
+## exemple useReducer
+``````
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return { count: state.count + 1 };
+    case 'DECREMENT':
+      return { count: state.count - 1 };
+    default:
+      return state;
+  }
+};
+const [state, dispatch] = useReducer(reducer, { count: 0 });
+dispatch({ type: 'INCREMENT' });
+
+return (
+  <div>
+    Count: {state.count}
+    <button onClick={() => dispatch({ type: 'INCREMENT' })}>Increment</button>
+    <button onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement</button>
+  </div>
+);
