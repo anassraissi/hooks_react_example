@@ -7,6 +7,7 @@ import Custom from './Custom_hooks/App';
 import UseMemo from './useMemo/App';
 import UseCallback from "./useCallback/ParentComponent";
 import UseReducer from './useReducer/App';
+import UseRef from './UseRef/ClassComponent'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,8 +17,8 @@ root.render(
     {/* <Custom></Custom> */}
     {/* <UseMemo></UseMemo> */}
     {/* <UseCallback></UseCallback> */}
-<UseReducer></UseReducer>
-
+{/* <UseReducer></UseReducer> */}
+<UseRef></UseRef>
   </React.StrictMode>
 );
 
