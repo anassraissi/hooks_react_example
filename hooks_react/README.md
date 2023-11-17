@@ -38,3 +38,8 @@ return (
     <button onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement</button>
   </div>
 );
+`````` 
+# useRef
+``````
+In React, the useRef hook is used to create a mutable object that has a current property. This property can be assigned a value, and it persists across renders. useRef is often used to access or interact with a DOM element directly or to persist values across renders without causing a re-render when the value changes.
+``````

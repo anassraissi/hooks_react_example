@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react'
+import FunctionComponent from './FunctionComponent';
 
 export default class ClassComponent extends Component {
     constructor(){
@@ -16,6 +17,8 @@ export default class ClassComponent extends Component {
         <h1>hi anass i'm here </h1>
         <input ref={this.inputRef}></input>
         <button onClick={this.run}>click here to focus the input</button>
+        <hr></hr>
+        <FunctionComponent></FunctionComponent>
       </div>
     )
   }
