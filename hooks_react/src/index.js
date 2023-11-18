@@ -8,6 +8,7 @@ import UseMemo from './useMemo/App';
 import UseCallback from "./useCallback/ParentComponent";
 import UseReducer from './useReducer/App';
 import UseRef from './UseRef/ClassComponent'
+import ThemeContext from "./UseContex/App";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +19,8 @@ root.render(
     {/* <UseMemo></UseMemo> */}
     {/* <UseCallback></UseCallback> */}
 {/* <UseReducer></UseReducer> */}
-<UseRef></UseRef>
+{/* <UseRef></UseRef> */}
+<ThemeContext></ThemeContext>
   </React.StrictMode>
 );
 
