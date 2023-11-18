@@ -9,6 +9,7 @@ import UseCallback from "./useCallback/ParentComponent";
 import UseReducer from './useReducer/App';
 import UseRef from './UseRef/ClassComponent'
 import ThemeContext from "./UseContex/App";
+import UseState from "./UseState/App";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +21,8 @@ root.render(
     {/* <UseCallback></UseCallback> */}
 {/* <UseReducer></UseReducer> */}
 {/* <UseRef></UseRef> */}
-<ThemeContext></ThemeContext>
+{/* <ThemeContext></ThemeContext> */}
+<UseState></UseState>
   </React.StrictMode>
 );
 
