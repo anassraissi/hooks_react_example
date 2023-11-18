@@ -8,7 +8,7 @@ export function ThemeProvider(props){
         setTheme(theme  == 'dark'? 'light' : 'dark');
     }
     return(
-    <ThemeContext.Provider value={{theme,setTheme,toggleTheme}  }>
+    <ThemeContext.Provider value={{theme,toggleTheme}  }>
         {props.children}
     </ThemeContext.Provider>
     );
