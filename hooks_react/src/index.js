@@ -10,6 +10,7 @@ import UseReducer from './useReducer/App';
 import UseRef from './UseRef/ClassComponent'
 import ThemeContext from "./UseContex/App";
 import UseState from "./UseState/App";
+import Project from "./Project_hooks/App";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,7 +23,8 @@ root.render(
 {/* <UseReducer></UseReducer> */}
 {/* <UseRef></UseRef> */}
 {/* <ThemeContext></ThemeContext> */}
-<UseState></UseState>
+{/* <UseState></UseState> */}
+<Project></Project>
   </React.StrictMode>
 );
 
